@@ -5,8 +5,7 @@
     --color-text-primary: #F6F6F6;
     --color-text-secondary: #723EBE;
     --title-font-text: "Krona One", sans-serif;
-    --subtitle-font-text: "Montserrat", sans-serif;
-    
+    --subtitle-font-text: "Montserrat", sans-serif;    
 }
 
 * {
@@ -27,12 +26,16 @@ body {
     gap: 1.5em;
 }
 
-.bottom_menu {
+.bottom-menu {
     color: var(--color-text-secondary);
     font-family: var(--subtitle-font-text);
     font-size: 1.2em;
     font-weight: 600;
     text-decoration: none;
+}
+
+.bottom-menu:hover {
+    color: var(--color-text-primary);
 }
 
 /**************** MAIN ****************/
@@ -42,6 +45,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 4em;
 }
 
 .content {
@@ -55,7 +59,7 @@ body {
     font-family: var(--title-font-text);
     font-size: 1.5em;
     font-weight: 400;
-    line-height: 56px;
+    line-height: 32px;
     text-align: left;
 }
 
@@ -67,7 +71,7 @@ body {
     font-family: var(--subtitle-font-text);
     font-size: 1.1em;
     font-weight: 400;
-    line-height: 36px;
+    line-height: 24px;
     text-align: left;
 
 }
@@ -84,7 +88,7 @@ body {
 
 .title-social {
     font-family: var(--subtitle-font-text);
-    font-size: 18px;
+    font-size: 1.1em;
 }
 
 .button {
@@ -115,21 +119,17 @@ body {
     width: 24px ;
 }
 
-img {
-    width: 25%;
+.image {
+    width: 30%;
     border-radius: 1em;
 }
 
 .footer {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
     background-color: var(--color-text-secondary);
     color: var(--color-text-primary);
     text-align: center;
     font-family: var(--subtitle-font-text);
     font-size: 1.2em;
-
 }
 
 /************* ABOUT ME **************/
@@ -140,7 +140,24 @@ img {
 }
 
 .title-about {
+    color: var(--color-text-secondary);
     font-family: var(--title-font-text);
     font-size: 1.5em;
     font-weight: 800;
+}
+
+@media (max-width: 1200px) {
+    .menu {
+        padding: 2%;
+        justify-content: center;
+    }
+
+    .apresentation {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .content {
+        width: auto;
+    }
 }
