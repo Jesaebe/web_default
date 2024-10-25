@@ -1,0 +1,5 @@
+Problema: Gerir os chamados de clientes, assim como saber o que foi realizado em cada cliente e ter um histórico do que já foi realizado. Ter um controle dos equipamentos de cada cliente(como tipo, peças, etc) e também os equipamentos em reparo no laboratório.
+
+Dores: Não saber o histórico de atendimento dos clientes, para ter ideia de quais problemas mais ocorre para previnir que aconteçam com frequencia, além de dimecionar chamados com prioridade.
+
+Solução: Criar um sistema que gerencie todos esses recursos para trazer informações para tomar decisão.

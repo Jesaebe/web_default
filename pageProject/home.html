@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MyBus</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        blue: {
+                            light: '#A748EE',
+                            dark: '#723EBE',
+                            hover: '#CE42FB'
+                        }
+                    },
+                    fontFamily: {
+                        play: ['Playwrite GB S', 'sans-serif']
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-black font-play p-10">
+
+    <main class="drop-shadow-2x1 lg:w-3/4">
+
+        <section>
+            <h1 class="text-2xl text-blue-dark mb-4">MyBus</h1>
+        </section>
+        <section class="mb-4">
+            <div class="relative inline-block text-left w-full">
+                <div>
+                <p class="text-white">Para onde ir?</p>
+                  <button type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                    Selecione o bairro
+                    <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                      <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                </div>
+            
+                <div class="absolute w-full hidden z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                    <div class="py-1" role="none">
+                        <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-0">Urbis VI</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-1">Candeias</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-2">License</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h1 class="text-2xl text-blue-dark mb-2">Ônibus Disponíveis</h1>
+            <div class="bg-white p-3 mb-2 gap-6 rounded-lg lg:rounded-l-none  lg:w-1/2">
+                <div class="flex ">
+                    <div class="w-1/2">
+                        <p class="text-xs" >Linha</p>
+                        <h5>P52</h5>
+                    </div>
+                    <div class="w-1/2 text-right">
+                        <p class="text-xs">Previsão</p>
+                        <h5>20min</h5>
+                    </div>
+                </div>
+                <div class="flex ">
+                    <div class="w-1/2">
+                        <p class="text-xs" >Motorista</p>
+                        <h5>João Carlos</h5>
+                    </div>
+                    <div class="w-1/2 text-right">
+                        <p class="text-xs">Ônibus</p>
+                        <h5>000001</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-3 mb-2 gap-6 rounded-lg lg:rounded-l-none  lg:w-1/2">
+                <div class="flex ">
+                    <div class="w-1/2">
+                        <p class="text-xs" >Linha</p>
+                        <h5>R09</h5>
+                    </div>
+                    <div class="w-1/2 text-right">
+                        <p class="text-xs">Previsão</p>
+                        <h5>35min</h5>
+                    </div>
+                </div>
+                <div class="flex ">
+                    <div class="w-1/2">
+                        <p class="text-xs" >Motorista</p>
+                        <h5>Cláudia Maria</h5>
+                    </div>
+                    <div class="w-1/2 text-right">
+                        <p class="text-xs">Ônibus</p>
+                        <h5>000010</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-3 mb-2 gap-6 rounded-lg lg:rounded-l-none  lg:w-1/2">
+                <div class="flex ">
+                    <div class="w-1/2 ">
+                        <p class="text-xs" class="text-xs">Linha</p>
+                        <h5>D30</h5>
+                    </div>
+                    <div class="w-1/2 text-right">
+                        <p class="text-xs">Previsão</p>
+                        <h5>50min</h5>
+                    </div>
+                </div>
+                <div class="flex ">
+                    <div class="w-1/2">
+                        <p class="text-xs" >Motorista</p>
+                        <h5>José Santos</h5>
+                    </div>
+                    <div class="w-1/2 text-right">
+                        <p class="text-xs">Ônibus</p>
+                        <h5>000011</h5>
+                    </div>
+                </div>
+            </div>            
+        </section>
+
+        <!-- <section
+            class="bg-white p-10 gap-6 flex flex-col justify-center items-center rounded-lg lg:rounded-l-none  lg:w-1/2">
+            <div class="text-center">
+                <h1 class="text-4xl mb-2 text-blue-dark">MyBus</h1>
+                <p class="text-xl text-gray-700 mb-2 text-blue-dark">Seu ônibus n   o ponto!</p>
+            </div>
+
+            <form>
+                <label class="text-sm font-bold text-gray-700 mb-2" for="email">Email</label>
+                <input
+                    class="text-sm w-full mb-4 pl-3 rounded border py-2 shadow focus:outline-none hover:border-blue-light hover:ring-1 hover:ring-blue-dark focus:border-blue-dark focus:ring-1 focus:ring-blue-dark duration-500"
+                    id="email" type="email" placeholder="Digite seu email">
+                <label class="text-sm font-bold text-gray-700 mb-2" for="email">Senha</label>
+                <input
+                    class="text-sm w-full mb-4 pl-3 rounded border py-2 shadow focus:outline-none hover:border-blue-light hover:ring-1 hover:ring-blue-dark focus:border-blue-dark focus:ring-1 focus:ring-blue-dark duration-500"
+                    id="email" type="password" placeholder="Digite sua senha">
+                <button
+                    class="font-bold text-white bg-blue-dark w-full mb-2 py-2 rounded-lg shadow-2xl hover:bg-blue-hover duration-500"
+                    type="button">Entrar</button>
+                <button
+                    class="font-bold text-blue-dark bg-white border-2 border-blue-dark w-full py-2 rounded-lg shadow-2xl hover:bg-blue-hover hover:text-white duration-500"
+                    type="button">Novo Cadastro</button>
+
+            </form>
+        </section> -->
+    </main>
+
+</body>
+
+</html>
