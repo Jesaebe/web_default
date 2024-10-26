@@ -9,10 +9,12 @@ camposFormulario.forEach((campo) => {
         verificaCampo(campo);
     });
     
-    // campo.addEventListener('keydown', () => {
-    //     campo.value = maskCPF(cpf);
-    // });
-    
+    if (campo.name == "cpf") {
+        campo.addEventListener('keydown', () => {
+            campo.value = maskCPF(cpf);
+        });
+    }
+
     campo.addEventListener('invalid', (evento) => {
         evento.preventDefault()
     });
@@ -24,8 +26,7 @@ function verificaCampo(campo) {
     let mensagem = "";
     campo.setCustomValidity('');
     if (campo.name == "cpf" && campo.value.length >= 11) {
-        ehUmCPF(campo);
-        
+        ehUmCPF(campo);        
     }
 
     if (campo.name == "aniversario" && campo.value != "") {
@@ -107,9 +108,12 @@ formulario.addEventListener('submit', (e) => {
         'nome': e.target.elements['nome'].value,
         'email': e.target.elements['email'].value,
         'rg': e.target.elements['rg'].value,
-        'cpf': e.target.elements['cpf'].value,
+        'cpf': e.target.elements['cpf'].value.replace(/\.|-/g,""),
         'aniversario': e.target.elements['aniversario'].value,
     }
+
+    localStorage.setItem('cadastro', JSON.stringify(listaRespostas));
+    window.location.href = "./abrir-conta-form-2.html";
 })
 
 
