@@ -10,9 +10,9 @@ export default function ehUmCPF(campo) {
     ) {
         console.log(`CPF Válido: ${cpf}`);        
     } else {
+        campo.setCustomValidity("CPF Inválido ou Inexistente");
         console.log(`CPF Inválido: ${cpf}`);
     }
-      
 }
 
 function validaNumerosRepetidos(cpf) {
