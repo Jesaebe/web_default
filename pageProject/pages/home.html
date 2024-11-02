@@ -10,29 +10,11 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        blue: {
-                            light: '#A748EE',
-                            dark: '#723EBE',
-                            hover: '#CE42FB'
-                        }
-                    },
-                    fontFamily: {
-                        play: ['Playwrite GB S', 'sans-serif']
-                    },
-                }
-            }
-        }
-    </script>
 </head>
 
 <body class="bg-black font-play p-10">
 
-    <main class="drop-shadow-2x1 lg:w-3/4">
+    <main class="drop-shadow-2x1">
 
         <section>
             <h1 class="text-2xl text-blue-dark mb-4">MyBus</h1>
@@ -62,7 +44,7 @@
 
         <section>
             <h1 class="text-2xl text-blue-dark mb-2">Ônibus Disponíveis</h1>
-            <div class="bg-white p-3 mb-2 gap-6 rounded-lg lg:rounded-l-none  lg:w-1/2">
+            <div class="bg-white p-3 mb-2 gap-6 rounded-lg">
                 <div class="flex ">
                     <div class="w-1/2">
                         <p class="text-xs" >Linha</p>
@@ -85,7 +67,7 @@
                 </div>
             </div>
 
-            <div class="bg-white p-3 mb-2 gap-6 rounded-lg lg:rounded-l-none  lg:w-1/2">
+            <div class="bg-white p-3 mb-2 gap-6 rounded-lg">
                 <div class="flex ">
                     <div class="w-1/2">
                         <p class="text-xs" >Linha</p>
@@ -108,7 +90,7 @@
                 </div>
             </div>
 
-            <div class="bg-white p-3 mb-2 gap-6 rounded-lg lg:rounded-l-none  lg:w-1/2">
+            <div class="bg-white p-3 mb-2 gap-6 rounded-lg">
                 <div class="flex ">
                     <div class="w-1/2 ">
                         <p class="text-xs" class="text-xs">Linha</p>
@@ -158,7 +140,7 @@
             </form>
         </section> -->
     </main>
-
+    <script src="../js/home.js" type="module"></script>
 </body>
 
 </html>

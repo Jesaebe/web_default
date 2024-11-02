@@ -10,24 +10,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        blue: {
-                            light: '#A748EE',
-                            dark: '#723EBE',
-                            hover: '#CE42FB'
-                        }
-                    },
-                    fontFamily: {
-                        play: ['Playwrite GB S', 'sans-serif']
-                    },
-                }
-            }
-        }
-    </script>
+    
 </head>
 
 <body class="bg-black font-play flex justify-center items-center h-screen">
@@ -56,13 +39,13 @@
                 <a href="home.html"><button                     
                     class="font-bold text-white bg-blue-dark w-full mb-2 py-2 rounded-lg shadow-2xl hover:bg-blue-hover duration-500"
                     type="button">Entrar</button></a>
-                <button
+                <a href="newUser.html"><button
                     class="font-bold text-blue-dark bg-white border-2 border-blue-dark w-full py-2 rounded-lg shadow-2xl hover:bg-blue-hover hover:text-white duration-500"
-                    type="button">Novo Cadastro</button>
+                    type="button">Novo Cadastro</button></a>
             </form>
         </section>
     </main>
-
+    <script src="../js/login.js" type="module"></script>
 </body>
 
 </html>
