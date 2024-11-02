@@ -8,8 +8,9 @@
     <title>MyBus</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
-    </style>
+        </style>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/login.js" defer></script>
     
 </head>
 
@@ -21,7 +22,7 @@
             <img class="p-6 m-auto" src="../image/bus_logo.png" alt="icone de mergulhador">
         </section>
 
-        <section class="bg-white p-10 gap-6 flex flex-col justify-center items-center rounded-lg lg:rounded-l-none  lg:w-1/2">
+        <section id="sectionLogin" class="bg-white p-10 gap-6 flex flex-col justify-center items-center rounded-lg lg:rounded-l-none  lg:w-1/2">
             <div class="text-center">
                 <h1 class="text-4xl mb-2 text-blue-dark">MyBus</h1>
                 <p class="text-xl text-gray-700 mb-2 text-blue-dark">Seu ônibus no ponto!</p>
@@ -35,17 +36,16 @@
                 <label class="text-sm font-bold text-gray-700 mb-2" for="email">Senha</label>
                 <input
                     class="text-sm w-full mb-4 pl-3 rounded border py-2 shadow focus:outline-none hover:border-blue-light hover:ring-1 hover:ring-blue-dark focus:border-blue-dark focus:ring-1 focus:ring-blue-dark duration-500"
-                    id="email" type="password" placeholder="Digite sua senha">
+                    id="password" type="password" placeholder="Digite sua senha">
                 <a href="home.html"><button                     
                     class="font-bold text-white bg-blue-dark w-full mb-2 py-2 rounded-lg shadow-2xl hover:bg-blue-hover duration-500"
                     type="button">Entrar</button></a>
                 <a href="newUser.html"><button
-                    class="font-bold text-blue-dark bg-white border-2 border-blue-dark w-full py-2 rounded-lg shadow-2xl hover:bg-blue-hover hover:text-white duration-500"
+                    class="font-bold text-blue-dark bg-white mb-2 border-2 border-blue-dark w-full py-2 rounded-lg shadow-2xl hover:bg-blue-hover hover:text-white duration-500"
                     type="button">Novo Cadastro</button></a>
-            </form>
-        </section>
-    </main>
-    <script src="../js/login.js" type="module"></script>
-</body>
-
+                <input id="darkMode" type="button" value="DarkMode" class="font-bold text-gray-900 bg-white border-2 border-gray-900 w-full py-2 rounded-lg shadow-2xl hover:bg-blue-hover hover:text-white duration-500"></button>
+                </form>
+            </section>
+        </main>
+    </body>
 </html>
